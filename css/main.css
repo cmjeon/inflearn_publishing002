@@ -25,18 +25,17 @@ body {
 header {
   width:100%;
   padding-top:30px;
-  background: yellow;
+  position: fixed;
+  z-index:100;
 }
 .innerHeader {
   height:80px;
   padding: 0 80px;
-  background: blue;
 }
 .innerHeader .logo {
   width: 170px;
   height: 80px;
   float: left;
-  background: red;
   margin-right: 180px;
 }
 .innerHeader .logo a {
@@ -71,4 +70,27 @@ header {
   display: inline-block;
   vertical-align: middle;
   margin-top: -5px;
+}
+/*visual*/
+.visual {
+
+}
+.visual .slide li {
+  width:100%;
+  height:100vh;
+  background: #222;
+  position: relative;
+}
+.visual .slide li img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.visual .slide li .txt {
+  position: absolute;
+  left:10%;
+  top:50%;
+  color: #fff;
+  font-size: 18px;
+  transform: translateY(-50%);
 }
