@@ -114,3 +114,52 @@ header {
   color:#ccc;
   font-weight: bold;
 }
+/*contents*/
+.contents {
+  background: #1b1b1b;
+  padding: 120px 0px;
+  overflow: hidden;
+}
+.contents .mainText {
+  width: 1170px;
+  margin: 0 auto;
+  color:#fff;
+  position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+}
+.contents .mainText:after {
+  content: '”';
+  font-size:300px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+.contents .mainText:before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffec03;
+  position: absolute;
+  left: 50px;
+  top:130px;
+}
+.contents .mainText h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.2;
+  float: left;
+  width:30%;
+}
+.contents .mainText p{
+  float: right;
+  width: 70%;
+  font-size: 25px;
+  line-height:  1.4;;
+}
+.contents .mainText p span {
+  display: block;
+  margin-top:60px;
+  font-size: 20px;
+}
