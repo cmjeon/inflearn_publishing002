@@ -35,6 +35,7 @@ header {
   padding-top:30px;
   position: fixed;
   z-index:100;
+  transition: all 0.5s;
 }
 .innerHeader {
   height:80px;
@@ -51,9 +52,13 @@ header {
   width: 100%;
   height: 100%;
   /* background: green; */
+  position: relative;
 }
 .innerHeader .logo a img {
   width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
 }
 .innerHeader .logo a img:nth-child(2) {
   opacity: 0;
@@ -79,6 +84,71 @@ header {
   vertical-align: middle;
   margin-top: -5px;
 }
+
+/*fixHeader*/
+header.on {
+  padding:20px 0 0;
+  transition: all 0.5s;
+}
+header:before {
+  content:'';
+  width:100%;
+  height:0;
+  background-color: #222;
+  position: absolute;
+  top:0;
+  z-index: -1;
+}
+header.on:before {
+  height:100%;
+  border-bottom:1px solid #2c2c2c;
+  transition: all 0.5s;
+}
+header.on .innerHeader .logo a img:nth-child(2) {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/*gnb*/
+.gnb {
+  padding: 70px 100px;
+  height: 100vh;
+  color:#666;
+  position: absolute;
+  right:-100%;
+  top:0%;
+  z-index: 200;
+  box-sizing: border-box;
+  transition: all 0.8s;
+  background: #000;
+}
+.gnb.on {
+  right:0%;
+  transition: all 0.8s;
+}
+.gnb .close {
+  font-size: 40px;
+  color: #fff;
+  float: right;
+  display: block;
+}
+.gnb ul {
+  float: left;
+  margin-right: 200px;
+}
+.gnb ul li a {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.7;
+  transition: all 0.3;
+}
+.gnb ul li:first-child a,
+.gnb ul li:hover {
+  color:#fff;
+  transition: all 0.5s;
+}
+
 /*visual*/
 .visual .slide li {
   width:100%;
@@ -119,6 +189,23 @@ header {
   color:#ccc;
   font-weight: bold;
 }
+
+/*motion*/
+.visual .scroll {
+  animation-name: scroll;
+  animation-duration:0.8s;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    left:-100px;
+  }
+  100% {
+    opacity: 1;
+    left:50px;
+  }
+}
+
 /*contents*/
 .contents {
   background: #1b1b1b;
@@ -339,43 +426,4 @@ footer .goTop {
   bottom: 60px;
   font-size: 48px;
   color:#fff;
-}
-/*gnb*/
-.gnb {
-  padding: 70px 100px;
-  height: 100vh;
-  color:#666;
-  position: absolute;
-  right:-100%;
-  top:0%;
-  z-index: 200;
-  box-sizing: border-box;
-  transition: all 0.8s;
-  background: #000;
-}
-.gnb.on {
-  right:0%;
-  transition: all 0.8s;
-}
-.gnb .close {
-  font-size: 40px;
-  color: #fff;
-  float: right;
-  display: block;
-}
-.gnb ul {
-  float: left;
-  margin-right: 200px;
-}
-.gnb ul li a {
-  display: block;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.7;
-  transition: all 0.3;
-}
-.gnb ul li:first-child a,
-.gnb ul li:hover {
-  color:#fff;
-  transition: all 0.5s;
 }

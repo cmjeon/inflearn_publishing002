@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ystudio강의진행용</title>
+  <title>ystudio-실습용</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <!-- script -->
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/scrolla.jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -57,7 +61,7 @@
     </section>
     <!-- contents -->
     <section class="contents">
-      <div class="mainText">
+      <div class="mainText animate" data-animate="fadeInUp" data-duration="1s" data-delay="0s">
         <h3>
           Greate experience <br>
           Build great brands.
@@ -72,12 +76,12 @@
       </div>
       <div class="project">
         <div class="top">
-          <h3>Meet <br> Out Project</h3>
+          <h3 class="animate" data-animate="fadeInLeft" data-duration="1s" data-delay="0s">Meet <br> Out Project</h3>
           <a href="#">More Projects
             <span class="lnr lnr-chevron-right"></span>
           </a>
         </div>
-        <ul>
+        <ul class="animate" data-animate="fadeInUp" data-duration="1s" data-delay="0s">
           <li>
             <a href="#">
               <img src="img/project1.jpg" alt="">
@@ -118,7 +122,7 @@
       </div>
       <div class="partner">
         <h3>우리의 소중한 고객입니다.</h3>
-        <ul>
+        <ul class="animate" data-animate="fadeInRight" data-duration="1s" data-delay="0s">
           <li><img src="img/partner1.png" alt=""></li>
           <li><img src="img/partner2.png" alt=""></li>
           <li><img src="img/partner3.png" alt=""></li>
@@ -129,7 +133,7 @@
           <li><img src="img/partner8.png" alt=""></li>
         </ul>
       </div>
-      <div class="contact">
+      <div class="contact" class="animate" data-animate="fadeIn" data-duration="2s" data-delay="0s">
         <div class="inner">
           <h3>당신의 프로젝트를 이야기해 주세요.</h3>
           <p class="tel">010.1234.1234</p>
