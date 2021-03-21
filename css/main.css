@@ -237,3 +237,41 @@ header {
   transform: scale(1.2);
   transition: all 1s;
 }
+/*partner*/
+.contents .partner {
+  width: 1170px;
+  margin: 120px auto;
+  color: #fff;
+}
+.contents .partner h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.contents .partner ul {
+  overflow: hidden;
+}
+.contents .partner ul li {
+  float: left;
+  width:29%;
+  height:100px;
+  margin-top: 80px;
+  text-align: center;
+}
+.contents .partner ul li:nth-child(1),
+.contents .partner ul li:nth-child(5) {
+  width: 21%;
+  text-align: left;
+}
+.contents .partner ul li:nth-child(4n) {
+  width:21%;
+  text-align: right;
+}
+.contents .partner ul li img {
+  display: inline-block;
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+.contents .partner ul li:hover img{
+  opacity: 1;
+  transition: all 0.3s;
+}
