@@ -304,3 +304,37 @@ header {
   height:1000px;
   display: block;
 }
+/*footer*/
+footer {
+  background: #1b1b1b;
+  color: #999;
+  padding:0 80px 80px;
+  position: relative;
+}
+footer ul {
+  overflow: hidden;
+}
+footer ul li {
+  float: left;
+  width: 33.3333%;
+}
+footer ul li:nth-child(2) {
+  color:#eee;
+  font-size: 16px;
+  line-height: 2;
+}
+footer ul li:nth-child(2) span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #999;
+}
+footer ul li:nth-child(3) {
+  font-weight: bold;
+}
+footer .goTop {
+  position: absolute;
+  right: 80px;
+  bottom: 60px;
+  font-size: 48px;
+  color:#fff;
+}
