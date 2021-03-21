@@ -26,6 +26,8 @@ body {
 .wrap {
   width: 100%;
   margin:0 auto;
+  background: #fff;
+  position: relative;
 }
 /*header*/
 header {
@@ -337,4 +339,43 @@ footer .goTop {
   bottom: 60px;
   font-size: 48px;
   color:#fff;
+}
+/*gnb*/
+.gnb {
+  padding: 70px 100px;
+  height: 100vh;
+  color:#666;
+  position: absolute;
+  right:-100%;
+  top:0%;
+  z-index: 200;
+  box-sizing: border-box;
+  transition: all 0.8s;
+  background: #000;
+}
+.gnb.on {
+  right:0%;
+  transition: all 0.8s;
+}
+.gnb .close {
+  font-size: 40px;
+  color: #fff;
+  float: right;
+  display: block;
+}
+.gnb ul {
+  float: left;
+  margin-right: 200px;
+}
+.gnb ul li a {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.7;
+  transition: all 0.3;
+}
+.gnb ul li:first-child a,
+.gnb ul li:hover {
+  color:#fff;
+  transition: all 0.5s;
 }
